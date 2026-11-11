@@ -11,6 +11,10 @@ Commodore Plus/4 programs
 + AutoRace.bas
 + AutoRace.prg
 
+### Baccarat - originally a mainframe BASIC program.
++ baccarat.bas
++ baccarat.prg
+
 ### David H. Ahl's simple benchmark program.
 + bench.bas
 + bench.png - A list of values from computers at the time.
@@ -20,6 +24,11 @@ Commodore Plus/4 programs
 + Originally by C.T. Nadovich.  Written for the PET in Cursor #21
 + boswain.bas
 + boswain.prg
+
+### Dive - Originally from the Commodore PET, Cursor #30
++ Dive for treasure, avoid getting eaten by the sharks and running out of air
++ dive.bas
++ dive.prg
 
 ### Executive Decision Maker
 + Inspired by "Not OK - A Requiem for GW-BASIC", by Mark Jones Lorenzo
@@ -44,6 +53,19 @@ Commodore Plus/4 programs
 + guess.bas
 + guess.prg
 
+### Mow the lawn.  Originally from the Commodore PET, Cursor #26
++ lawn.bas
++ lawn.prg
+
 ### Magic 8 Ball
 + m8ball.bas
 + m8ball.prg
+
+### Match numbers.  Educational program from the Commodore PET, Cursor #22
+- Pick boxes with numbers to add up to a randomly picked total.  Math and memory game.
++ match.bas
++ match.prg
+
+### Draw Poker.  Originally from the Commodore PET, Cursor #22
++ poker.bas
++ poker.prg
