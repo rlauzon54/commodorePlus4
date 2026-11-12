@@ -69,3 +69,23 @@ Commodore Plus/4 programs
 ### Draw Poker.  Originally from the Commodore PET, Cursor #22
 + poker.bas
 + poker.prg
+
+### Solitare - Originally from the Commodore PET
++ solitare.bas
++ solitare.prg
+
+### Treasure Hunt - Originally from the Commodore PET, Cursor #22
+- Hunt for treasure in the maze, avoiding getting caught and unscramble a word for extra points.
++ thunt.bas
++ thunt.prg
+
+### Volcano - Originally from the Commodore PET
+- Sort-of text adventure, similar to Oregon Trail.  Escape from Mt. St. Helens eruption.
++ volcano.bas
++ volcano.prg
+
+### Zap - Originally from the Commodore PET, Cursor #2
+- Like Centepede/snake.
++ zap.bas
++ zap.prg
+

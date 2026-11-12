@@ -1,0 +1,466 @@
+    5 rem ***
+    6 rem *** volcano / softside magazine * 7 rem *** translated from trs-80
+    8 rem *** by chuck holland
+    9 rem ***
+   10 rem
+   11 rem
+   12 rem
+   20 color 0,1: color 4,1: color 1,6,7: scnclr
+   39 dl=2000 : rem ***  delay time  ***
+   40 goto 89
+   50 for i=1 to dl:next i:return
+   60 print"{down}{down}{down}type any key to continue."
+   62 getkey v$
+   64 return
+   70 print"{down}{down}enter number of the action you select":return
+   89 scnclr
+   90 print tab(12)"{down}{down}{down}{rvon}v o l c a n o !{rvof}"
+   95 gosub 50
+  100 print"{down}{down}on may 18, 1980 at 8:32 am, mount"
+  103 print"st. helens erupted with a force 500"
+  105 print"times greater than that of the atomic"
+  107 print"bomb that fell on hiroshima."
+  109 print"{down}{down}the top 1300 feet of the mountain was"
+  111 print"immediately pulverized and thrown 12"
+  113 print"miles into the sky. within moments"
+  115 print"everything within 150 square miles was"
+  117 print"engulfed in the fury of the volcano."
+  119 gosub 60
+  120 print"{clr}thick, black smoke accented with pink"
+  122 print"and purple lightning, flying boulders,"
+  124 print"and chunks of ice blasted a swath of"
+  126 print"destruction 20 miles to the north."
+  128 print"{down}{down}hot ash, rocks, and gas roared down the"
+  130 print"mountain in pyroclastic flows at over"
+  132 print"100 mph. the 800 degree flows collided"
+  134 print"into spirit lake and became a torrent"
+  136 print"of superheated mud carrying off 100 ton"
+  138 print"logging trucks, buildings, bridges and"
+  140 print"anything else in its path."
+  142 print"{down}{down}the mud flowed on into the toutle,"
+  144 print"cowlitz and columbia rivers causing"
+  146 print"severe flooding."
+  147 gosub 60
+  148 print"{clr}drawn by the hope of seeing some"
+  150 print"volcanic activity, many people had"
+  152 print"come to the mountain that weekend as"
+  154 print"many had every weekend since st. helens"
+  156 print"began emitting puffs of steam back in"
+  158 print"march."
+  160 print"{down}{down}although there were signs and road-"
+  162 print"blocks warning everyone to stay away,"
+  164 print"they still came. tourists, campers,"
+  166 print"scientists, photographers, adventurers,"
+  168 print"and the just plain curious."
+  170 print"{down}{down}but then no one expected that the"
+  172 print"mountain was waiting to explode like"
+  174 print"some kind of gigantic nuclear time bomb!"
+  176 gosub 60
+  178 print"{clr}about 70 of the visitors to the"
+  180 print"mountain that weekend did not leave"
+  182 print"alive."
+  184 print"{down}{down}exactly how many people perished will"
+  186 print"likely never be known."
+  188 print"{down}{down}what is known is that air force and"
+  190 print"army national guard helicopters rescued"
+  192 print"197 people, snatching them from around"
+  194 print"the boiling mountain."
+  196 gosub 60
+  200 rem **
+  201 rem **insert volcano graphic here *
+  202 rem **
+  499 print"{clr}"
+  500 printtab(12)"{rvon}the scenario{rvof}"
+  502 print"{down}{down}this program creates a scenario"
+  504 print"similar to those reported by some of"
+  506 print"the approximately 300 people who were"
+  508 print"camped around mt. st. helens on the"
+  510 print"morning of may 18, 1980."
+  512 print"{down}{down}{down}your goal is simple:  survive !"
+  514 print"{down}{down}{down}the hazzards are many..."
+  516 gosub 60
+  518 print"{clr}{rvon}l a v a :{rvof}unlike the more liquid lava"
+  520 print"of the hawaiian volcanos, the lava of"
+  522 print"st. helens is of the andesite variety--"
+  524 print"a sticky, gummy material. it moves"
+  526 print"slowly and does not travel far."
+  528 print"{down}{down}{rvon}a s h :{rvof}most of the deaths at"
+  530 print"st. helens were due to suffocation"
+  532 print"caused by hot ash forced into the lungs."
+  534 print"{down}{down}{rvon}p y r o c l a s t i c f l o w s :{rvof}"
+  536 print"masses of hot, dry rock that move like"
+  538 print"a fluid because they are mixed with hot"
+  540 print"air and other gasses. these flows"
+  542 print"travel at over 100 mph and affect areas"
+  544 print"far from the volcano."
+  546 gosub 60
+  548 print"{clr}{rvon}m u d f l o w s :{rvof}these look like a"
+  550 print"wave of hot, flowing concrete and can"
+  552 print"move at speeds up to 50 mph. they carry"
+  554 print"along boulders, trees, and debris in"
+  556 print"their wake."
+  558 print"{down}{rvon}g a s s e s :{rvof}hot gasses such as"
+  560 print"carbon dioxide, carbon monoxide,"
+  562 print"chlorine, and sulfurous fumes are"
+  564 print"spewed out together with molten or"
+  566 print"solid rock."
+  568 print"{down}{rvon}d e b r i s :{rvof}large chunks of earth"
+  570 print"rock and ice can be thrown out from"
+  572 print"any of the mountain's flanks as well"
+  574 print"as its summit."
+  576 print"{down}{rvon}l i g h t n i n g :{rvof}flashes of"
+  578 print"lightning, generated by highly charged"
+  580 print"dust particles, streak around the peak."
+  582 gosub 60
+  584 print"{clr}{rvon}f l o o d s :{rvof}mudflows join with"
+  586 print"rivers swelling them many times their"
+  588 print"normal size causing widespread flooding"
+  590 print"and killing of wildlife."
+  592 print"{down}{down}{rvon}e a r t h q u a k e s :{rvof}these result"
+  594 print"from the movement of molten rock within"
+  596 print"the mountain."
+  598 print"{down}{down}{rvon}f i r e s :{rvof}about a hundred fires"
+  600 print"were started during the st. helens"
+  602 print"eruption by hot gasses, pyroclastic"
+  604 print"flows, and lightning."
+  606 gosub 60
+  608 print"{clr}{rvon}-the scene-{rvof}"
+  610 print"{down}{down}you are camped on the west side of"
+  612 print"mt. st. helens. you hiked up from the"
+  614 print"end of a logging road where you left"
+  616 print"your car last night. you have a small"
+  618 print"fire going to make some coffee."
+  620 print"{down}{down}there is an eerie quiet. there are no"
+  622 print"birds singing."
+  623 gosub 50
+  624 gosub 60
+  626 print"{clr}suddenly you are shaken by an earth-"
+  628 print"quake! the ground undulates around you."
+  630 print"tall fir trees sway."
+  632 print"{down}{down}then...a giant roar, and the top of the"
+  634 print"mountain explodes thousands of feet"
+  636 print"into the air suspended on a column"
+  638 print"of thick black smoke."
+  640 print"{down}{down}the dense cloud expands and begins to"
+  642 print"move in your direction."
+  644 gosub 50
+  645 gosub 60
+  646 gosub9999
+  647 print"{clr}what should you do?"
+  648 print"{down}{down}1) use your camping shovel and dig in"
+  650 print"until it's safe to move."
+  652 print"{down}2) take photographs. they should be"
+  654 print"worth plenty."
+  656 print"{down}3) start back down the mountain to"
+  658 print"your car."
+  660 print"{down}4) get to high ground"
+  662 print"{down}5) try to find some shelter."
+  664 gosub 70
+  665 input d
+  670 ondgoto 675,680,685,690,695
+  675 print"{clr}you just dug your own grave. hot ash"
+  677 print"will bury you.":goto 700
+  680 print"{clr}congratulations...you have taken some"
+  681 print"really spectacular pictures that will"
+  682 print"be duplicated in a hundred newspapers."
+  683 print"{down}{down}you will receive many awards...."
+  684 print"all posthumously.":goto 700
+  685 print"{clr}now you are using your head. get out"
+  687 print"of there fast !":goto710
+  690 print"{clr}forget it ! hot sulfur dioxide gas"
+  691 print"coming out the side of the mountain"
+  692 print"gets you as you climb higher.":goto 700
+  695 print"{clr}you are too close to the hot ash for"
+  696 print"any shelter to be effective. those who"
+  697 print"tried this were buried alive.":goto 700
+  700 gosub 50
+  701 print"{down}{down}{down}{down}{rvon}you have perished{rvof}":gosub 50
+  702 print"{down}{down}want to try again (y/n)"
+  703 input d$:if d$="y"then goto 608
+  704 if d$="n"then goto 707
+  705 if d$<>"y" and d$<>"n"then print"answer only with a y or n.":goto 703
+  707 print"{clr}{down}either take a survival course or"
+  708 print"stay away from smoking mountains...."
+  709 print"preferably both !":end
+  710 print"{down}{down}{down}as you approach the hiking trail"
+  712 print"that leads down to the logging road,"
+  714 print"you find that many trees have fallen"
+  716 print"across the trail making passage"
+  718 print"difficult."
+  720 gosub 50
+  722 print"{down}{down}you think you remember a short cut"
+  724 print"down the mountain that also leads to"
+  725 print"the end of the logging road."
+  726 gosub 60
+  730 print"{clr}what should you do?"
+  732 print"{down}{down}1) attempt to navigate the trail."
+  734 print"{down}{down}2) take the short cut."
+  736 gosub 70
+  738 input d
+  750 on d goto 765,755
+  755 print"{clr}in an emergency we often forget even"
+  756 print"those things that we know well--such as"
+  757 print"our own phone number."
+  758 print"{down}{down}in your excitement you quickly find"
+  759 print"yourself lost."
+  760 print"{down}{down}your time runs out and you are over-"
+  761 print"run by a pyroclastic flow.":goto 700
+  765 print"{clr}under the circumstances this is the"
+  766 print"better choice. at least you know that"
+  767 print"the trail eventually leads back to the"
+  768 print"road."
+  769 gosub 50
+  770 print"{down}{down}you climb over huge fallen trees as"
+  771 print"you make your way back down the trail."
+  773 gosub 60
+  775 print"{clr}when you arrive at your car, you find"
+  777 print"the road is blocked by several large"
+  779 print"rocks which rolled on to it during the"
+  780 print"earthquake."
+  782 print"{down}{down}you know that the end of these roads is"
+  784 print"one of the first places that rescuers"
+  786 print"will look."
+  788 gosub 50
+  790 print"{down}{down}on the other hand there is a chance"
+  792 print"you could move those rocks just enough"
+  794 print"to get through."
+  796 gosub 60
+  800 print"{clr}what should you do?"
+  802 print"{down}{down}1) get in the car for protection and"
+  803 print"wait to be rescued."
+  804 print"{down}2) forget the car and go down the road"
+  805 print"on foot."
+  806 print"{down}3) build a fire to attract rescuers."
+  808 print"{down}4) try to get the rocks out of the way."
+  810 gosub 70
+  812 input d
+  815 on d goto 820,825,830,835
+  820 print"{clr}some people did exactly that."
+  821 print"unfortunately, their cars became their"
+  822 print"tombs.":goto 700
+  825 print"{clr}it is hard to outrun a volcano."
+  826 print"you are overtaken by a mudslide.":goto 700
+  830 print"{clr}you won't have to build a fire here."
+  831 print"it will be plenty hot without it in a"
+  832 print"few minutes.":goto 700
+  835 print"{clr}if there is a chance you can use your"
+  836 print"car to get away, take it!"
+  837 print"{down}{down}by using tree limbs as a lever and"
+  838 print"pushing other rocks out of the way with"
+  840 print"the car, you manage to get through."
+  841 gosub 50
+  842 print"{down}{down}as soon as you're clear, you floor"
+  844 print"the accelerator. you're going 80 mph"
+  846 print"down a dirt road."
+  848 gosub 50
+  850 print"{down}{down}you are approaching a bridge that"
+  860 print"crosses the toutle river when suddenly"
+  862 print"a mud flow hits."
+  864 print"{down}{down}the bridge explodes before your eyes."
+  866 gosub 50
+  867 gosub 60
+  870 print"{clr}you slam on the brakes and stop just"
+  871 print"short of the steaming chocolate ooze."
+  872 print"{down}{down}your way blocked, you get out of your"
+  873 print"car and begin running. after a while"
+  874 print"you tire and slow down, but looking up"
+  875 print"you start to run again."
+  876 print"{down}{down}the ash cloud is coming !"
+  878 gosub 60
+  879 print"{clr}as the cloud descends, it is as if"
+  880 print"someone has thrown a black velvet"
+  881 print"curtain over your head."
+  882 print"{down}all light vanishes."
+  883 print"{down}you cannot see your hand in front of"
+  884 print"your face. it is hot, burning."
+  885 print"{down}you try to catch your breath, but your"
+  886 print"throat feels like it is stuffed with"
+  887 print"warm cotton. your lungs burn and your"
+  888 print"eyes sting. you stumble and fall in the"
+  889 print"darkness.":gosub 60
+  890 print"{clr}what should you do?"
+  891 print"{down}{down}1) lie down with your face on the"
+  892 print"ground."
+  893 print"{down}2) find some shelter."
+  894 print"{down}3) rub the ash from your eyes."
+  895 print"{down}4) keep moving in the dark."
+  896 gosub 70
+  897 input d
+  900 on d goto 910,915,920,925
+  910 print"{clr}the right decision...if you want to"
+  911 print"make this your eternal resting place !":goto 700
+  915 print"{clr}i hope you like the spot you find"
+  916 print"because you're going to be there"
+  917 print"forever.":goto 700
+  920 print"{clr}volcanic ash is very abrasive. your"
+  921 print"eyes swell up. you wander around and"
+  922 print"are overcome.":goto 700
+  925 print"{clr}this is the only real chance you have."
+  926 print"to stay where you are means certain"
+  927 print"death."
+  928 print"{down}{down}you get up and begin walking with"
+  930 print"your hands out before you to feel the"
+  931 print"way."
+  932 print"{down}after a while you notice that your"
+  933 print"feet feel wet. you think you are"
+  934 print"walking in a creek."
+  936 gosub 60
+  938 print"{clr}what should you do?"
+  940 print"{down}{down}1) get out of the water and keep moving"
+  942 print"{down}2) wash out your eyes with the water."
+  944 print"{down}3) walk in the creek."
+  946 gosub 70
+  948 input d
+  950 on d goto 970,975,980
+  970 print"{clr}since you have no way to know where"
+  971 print"you're going, you wander in a circle"
+  972 print"until exhaustion takes over.":goto 700
+  975 print"{clr}the ashfall is too heavy. the water"
+  976 print"mixes with it to form a gritty paste.":goto 700
+  980 print"{clr}since you have no idea of which"
+  981 print"direction you're going, this offers the"
+  982 print"best alternative."
+  983 print"{down}you stoop down and feel the way the"
+  984 print"water is flowing and follow the current"
+  985 print"downhill."
+  986 gosub 50
+  987 print"{down}{down}you travel down the creek for some"
+  988 print"time. then, without warning you plunge"
+  989 print"into hot water up to your neck."
+  990 gosub 50
+  991 print"{down}instinctively, you reach out in the"
+  992 print"darkness and grab hold of something..."
+  993 print"{down}a fallen tree."
+  994 print"{down}it pulls you along downstream."
+  995 gosub 60
+ 1000 print"{clr}what should you do?"
+ 1002 print"{down}{down}1) let go of the log and swim for"
+ 1003 print"the bank."
+ 1005 print"{down}2) swim underwater."
+ 1007 print"{down}3) hang on."
+ 1009 gosub 70
+ 1011 input d
+ 1015 on d goto 1030,1030,1035
+ 1030 print"{clr}the river is filled with debris."
+ 1031 print"{down}you are crushed in a log jam.":goto 700
+ 1035 print"{clr}the log carries you along until it"
+ 1036 print"stops at a log jam. the end you are"
+ 1037 print"holding on to swings around and rests"
+ 1038 print"on a shallow area beside the bank."
+ 1040 print"{down}{down}you scramble out of the water."
+ 1041 print"{down}{down}finally, you can see something....":gosub 60
+ 1042 print"{clr}a dim glow in the distance. it looks"
+ 1043 print"like a searchlight. then you realize"
+ 1044 print"that it is the sun shining through the"
+ 1045 print"ash cloud."
+ 1046 print"{down}as you go on the ash gets thinner."
+ 1047 gosub 50
+ 1048 print"{down}{down}finally, the sun breaks through and"
+ 1049 print"you can see the sky again. up ahead you"
+ 1050 print"see a ridge, below you is a plateau of"
+ 1051 print"indescribable devastation...a gray ash"
+ 1052 print"covered moonscape."
+ 1053 gosub 60
+ 1060 print"{clr}what should you do?"
+ 1061 print"{down}{down}1) you are bleeding a little from your"
+ 1062 print"head and arms. tend to your wounds."
+ 1063 print"{down}2) go up to the ridge."
+ 1064 print"{down}3) start down towards the plateau."
+ 1065 print"{down}4) rest yourself."
+ 1066 gosub 70
+ 1067 input d
+ 1068 on d goto 1085,1095,1090,1085
+ 1085 print"{clr}you have wasted valuable time. you fall"
+ 1086 print"asleep and never wake up.":goto 700
+ 1090 print"{clr}why on earth would you want to go down"
+ 1091 print"there! poison gas gets you.":goto 700
+ 1095 print"{clr}up on the ridge you can be seen better"
+ 1096 print"from the air."
+ 1097 print"{down}{down}once on top you get an even better"
+ 1098 print"appreciation for the awesome magnitude"
+ 1099 print"of the volcano. everything below you is"
+ 1100 print"covered with thick, inpenetrable smoke."
+ 1101 gosub 60
+ 1105 print"{clr}what should you do?"
+ 1107 print"{down}{down}1) continue down the mountain."
+ 1109 print"{down}2) try to attract rescuers."
+ 1111 gosub 70
+ 1113 input d
+ 1115 on d goto 1135,1140
+ 1135 print"{clr}there is no place to go but back into"
+ 1136 print"the darkness."
+ 1137 print"{down}{down}you succumb to smoke inhalation.":goto 700
+ 1140 print"{clr}since you are in an area easily visable"
+ 1142 print"to rescue helicopters, and everything"
+ 1144 print"below you is covered with toxic smoke,"
+ 1145 print"you wisely decide to build a signal"
+ 1146 print"that can be seen from the air."
+ 1148 print"{down}you arrange rocks so they spell out"
+ 1150 print"'s o s' and point a long arrow to a"
+ 1151 print"small fire."
+ 1153 print"{down}finished, you fall to the ground"
+ 1154 print"exhausted, but fighting the urge to"
+ 1155 print"sleep. you must remain alert for the"
+ 1156 print"possibility of rescue."
+ 1158 gosub 50
+ 1160 print"{down}{down}against the rumbling of the volcano"
+ 1162 print"you hear a new sound...."
+ 1163 print"{down}also loud, but choppy."
+ 1165 gosub 60
+ 1167 print"{clr}it's a helicopter ! ! !"
+ 1169 gosub 50
+ 1170 print"{down}{down}you take off your shirt and wave it"
+ 1172 print"wildly."
+ 1173 print"{down}{down}ash falls off you in a small cloud"
+ 1175 print"as you jump up and down yelling as"
+ 1177 print"loudly as you can."
+ 1179 gosub 50
+ 1180 print"{down}{down}they see you as a plaster gray figure"
+ 1182 print"running around in circles. they lower"
+ 1183 print"a wicker rescue basket, and you jump in."
+ 1185 gosub 60
+ 1190 print"{clr}{rght}{rght}{rght}{rght}{rght}{down}{down}{down}{rvon}you made it ! !{rvof}"
+ 1192 print"{down}{down}you beat the mountain. congratulations!"
+ 1200 end
+ 9999 print"{clr}"
+10000 dl=1000
+10005 goto 10015
+10010 for i=1 to dl:next:return
+10015 ex$="{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}{CBM-+}"
+10020 t1$="MMMMMMMMMMMMMMMMMMMMM"
+10025 t2$="NNNNNNNNNNNNNNNNNNNNN"
+10030 up$="{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}"
+10035 dn$="{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}"
+10040 ov$="{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}"
+10045 bl$="{rvon}                                        "
+10050 scnclr
+10055 print tab(17)"N{CBM-T}{CBM-T}M"
+10060 print tab(14)"N{CBM-T}{CBM-T}    {CBM-T}M{CBM-@}"
+10065 print tab(12)"N{CBM-T} M       N{CBM-T}M"
+10070 print tab(12)"{CBM-G}   M{CBM-@}{CBM-@}{CBM-@}{CBM-@}{CBM-@}N   M"
+10075 t=11:u=27
+10080 for i=1 to 10:print tab(t)"N"tab(u)"M":t=t-1:u=u+1:next i
+10085 fori=1 to 200:print"^";:next i
+10090 gosub 10010
+10095 print left$(up$,16);left$(ov$,16)"{CBM-*}{rvon}     {rvof}{SHIFT-POUND}"
+10100 print left$(ov$,15);"{up}{up}{CBM-*}{rvon}       {rvof}{SHIFT-POUND}"
+10105 print left$(ov$,14);"{up}{up}{CBM-*}{rvon}         {rvof}{SHIFT-POUND}"
+10110 print left$(ov$,13);"{up}{up}{CBM-*}{rvon}           {rvof}{SHIFT-POUND}"
+10115 print left$(ov$,12);"{up}{up}{CBM-*}{rvon}             {rvof}{SHIFT-POUND}"
+10120 gosub 10010
+10125 print"{up}{up}";: print left$(ov$,5);left$(ex$,30)
+10130 o=5:e=30
+10135 for i=1 to 14:print left$(ov$,o);left$(ex$,e):o=o+.5:e=e-1:next i
+10140 print left$(ov$,10);left$(t1$,9);left$(t2$,10)
+10145 dl=500:gosub 10010
+10150 print"{up}{up}";:print left$(ov$,10);left$(ex$,20)
+10155 print"{up}";:print left$(ov$,9);left$(t1$,11);left$(t2$,11)
+10160 dl=400:gosub 10010
+10165 print"{up}{up}";:print left$(ov$,8);left$(ex$,24)
+10170 print"{up}{up}{up}";:print left$(ov$,6);left$(ex$,26)
+10175 print"{down}";:print left$(ov$,9);left$(ex$,22)
+10180 print left$(ov$,7);left$(t1$,13);left$(t2$,13)
+10185 print up$;:for i=1 to 20:print bl$;:next i
+10190 rem print up$;:for i=1 to 800:print"{rvon} {rvof}";:next
+10195 gosub 60
+10200 return
